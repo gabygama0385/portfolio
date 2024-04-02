@@ -1,0 +1,274 @@
+:root {
+    --main-color:#f3f6f6;
+}
+h1{
+    color: red;
+}
+#wrapper {
+    max-width: 1400px;
+    margin: 200px auto 0;
+    display: grid;
+    grid-template-columns: 280px 1fr 124px;
+    gap: 20px;
+    @media screen and (max-width: 1380px) {
+     #wrapper {
+        grid-template-columns: 280px 1fr;
+        }
+        }
+    }
+        @media  and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        }
+                        
+#wrapper > div {
+    background: #fff;
+    border-radius: 20px;
+}
+#col1, #col3{
+    padding: 20px;
+
+#col1 {
+    text-align: center;
+}
+#subheader {
+    display: inline-block ;
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    padding: 5px 20px;  
+}
+}
+#col2 {
+    padding: 40px;
+}
+body{
+background: url(../image/bg.jpg);
+}
+#profile {
+width: 100%;
+margin-top: -160px;
+border-radius: 20px;
+}
+h1, h2 {
+    font-family: "roboto slab", sans-serif;
+}
+h1 {
+    font-size: 26px;
+    font-weight: 500px;
+    font-family: "roboto slab, sans-serif";
+}
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 16px;
+    font-family: "poppins", sans-serif;
+    line-height: 2em;
+}
+h3 {
+    font-size: 28px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: "poppins", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+#cards  div {
+    padding: 25px;
+    border-radius: 20px;
+}
+#card2, #card3 {
+    background-color:#eef5fa;
+    display: grid;
+    grid-template-columns: 20% 80%;
+ 
+}
+#card1, #card4 {
+    background-color: #fff4f4;
+    display: grid;
+    grid-template-columns: 20% 80%;
+   }
+   #col3 ul {
+    list-style: none;
+    padding-left: 0px;  
+  }
+  #col3 ul li {
+    background: var(--main-color);;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 84px;
+    height: 84px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+    align-content: center;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+  }
+  #col3 ul li:hover {
+    background: #1b74e4;
+    color: #fff;
+  }
+  
+  #col3 ul li:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin: 0 auto 10px;
+  }
+  #col3 ul li:nth-child(1):before {
+    background-image: url(../image/about-black.svg);
+  }
+  #col3 ul li:nth-child(1):hover:before {
+    background-image: url(../image/about-white.svg);
+  }
+  #col3 ul li:nth-child(2):before {
+    background-image: url(../image/resume-black.svg);
+  }
+  #col3 ul li:nth-child(2):hover:before {
+    background-image: url(../image/resume-white.svg);
+  }
+  #col3 ul li:nth-child(3):before {
+    background-image: url(../image/works-black.svg);
+  }
+  #col3 ul li:nth-child(3):hover:before {
+    background-image: url(../image/works-white.svg);
+  }
+  #col3 ul li:nth-child(4):before {
+    background-image: url(../image/blog-black.svg);
+  }
+  #col3 ul li:nth-child(4):hover:before {
+    background-image: url(../image/blog-white.svg);
+  }
+  #col3 ul li:nth-child(5):before {
+    background-image: url(../image/contact-black.svg);
+  }
+  #col3 ul li:nth-child(5):hover:before {
+    background-image: url(../image/contact-white.svg);
+  }
+  #col1 ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+  #col1 ul li a {
+    background: var(--main-color);
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    display:block;
+  }
+  #col1 ul li a:hover{
+    background: #1b74e4;
+  }
+  #col1 ul li a span {
+    display: none;
+  }
+  #col1 ul li {
+    display: inline-block;
+  }
+  #col1 ul li a:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #col1 ul li.facebook a:before {
+    background-image: url(../image/facebook-color.svg);
+  }
+  #col1 ul li.facebook a:hover:before {
+    background-image: url(../image/facebook-white.svg);
+  }
+  #col1 ul li.instagram a:before {
+    background-image: url(../image/instagram-color.svg);
+  }
+  #col1 ul li.instagram a:hover:before {
+    background-image: url(../image/instagram-white.svg);
+  }
+  #col1 ul li.twitter a:before {
+    background-image: url(../image/twitter-color.svg);
+  }
+  #col1 ul li.twitter a:hover:before {
+    background-image: url(../image/twitter-white.svg);
+  }
+  #col1 ul li.linkedin a:before {
+    background-image: url(../image/linkedin-color.svg);
+  }
+  #col1 ul li.linkedin a:hover:before {
+    background-image: url(../image/linkedin-white.svg);
+  }
+.personal-info {
+    background:  var(--main-color);
+    padding: 20px 30px;
+    border-radius: 16px;
+}
+.item + .item {
+    border-top: 1px solid #cecece;
+    margin-top: 20px;
+    padding-top: 20px;
+    
+}
+.item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+}
+.item::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    grid-row: span 2;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 6px;
+        }
+.item:hover:before {
+    background-color: #1b74e4;
+}        
+
+.item h5 {
+    margin: 0;
+}
+
+.item.phone:before {
+    background-image: url(../image/cellphone-color.svg);
+}
+.item.phone:hover:before {
+        background-image: url(../image/cellphone-white.svg);
+}
+.item.email:before {
+    background-image: url(../image/email-color.svg);
+}
+.item.email:hover:before {
+        background-image: url(../image/email-white.svg);
+}
+.item.location:before {
+    background-image: url(../image/location-color.svg);
+}
+.item.location:hover:before {
+        background-image: url(../image/location-white.svg);
+}
+.item.birthday:before {
+    background-image: url(../image/calendar-color.svg);
+}
+.item.birthday:hover:before {
+        background-image: url(../image/calendar-white.svg);
+}
