@@ -10,16 +10,17 @@ h1{
     display: grid;
     grid-template-columns: 280px 1fr 124px;
     gap: 20px;
-    @media screen and (max-width: 1380px) {
+}
+@media screen and (max-width: 1380px) {
      #wrapper {
         grid-template-columns: 280px 1fr;
-        }
-        }
     }
-        @media  and (max-width: 480px) {
+}
+@media screen and (max-width: 480px) {
+    #wrapper {
         grid-template-columns: 1fr;
-        }
-                        
+    }
+}
 #wrapper > div {
     background: #fff;
     border-radius: 20px;
@@ -98,15 +99,13 @@ h4 {
     background-color: #fff4f4;
     display: grid;
     grid-template-columns: 20% 80%;
-   }
-   #col3 ul {
+}
+#col3 ul {
     list-style: none;
-    padding-left: 0px;  
-  }
-  #col3 ul li {
-    background: var(--main-color);;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    padding-left: 0px;
+}
+#col3 ul li a {
+    text-decoration: none;
     width: 84px;
     height: 84px;
     display: grid;
@@ -114,7 +113,16 @@ h4 {
     justify-content: center;
     align-items: center;  
     align-content: center;
-    font-family: poppins, sans-serif;
+}
+#col3 ul li a:hover {
+    color:#f3f6f6
+    
+}
+#col3 ul li {
+    background: var(--main-color);;
+    border-radius: 12px;
+    margin-bottom: 20px;
+        font-family: poppins, sans-serif;
     font-size: 14px;
   }
   #col3 ul li:hover {
@@ -122,42 +130,43 @@ h4 {
     color: #fff;
   }
   
-  #col3 ul li:before {
+  #col3 ul li a:before {
     content: '';
+    display: block;
     width: 30px;
     height: 30px;
     background-size: 30px;
     background-repeat: no-repeat;
     margin: 0 auto 10px;
   }
-  #col3 ul li:nth-child(1):before {
+  #col3 ul li.about a:before {
     background-image: url(../image/about-black.svg);
   }
-  #col3 ul li:nth-child(1):hover:before {
+  #col3 ul li.about a:hover:before {
     background-image: url(../image/about-white.svg);
   }
-  #col3 ul li:nth-child(2):before {
+  #col3 ul li.resume a:before {
     background-image: url(../image/resume-black.svg);
   }
-  #col3 ul li:nth-child(2):hover:before {
+  #col3 ul li.resume a:hover:before {
     background-image: url(../image/resume-white.svg);
   }
-  #col3 ul li:nth-child(3):before {
+  #col3 ul li.works a:before {
     background-image: url(../image/works-black.svg);
   }
-  #col3 ul li:nth-child(3):hover:before {
+  #col3 ul li.works a:hover:before {
     background-image: url(../image/works-white.svg);
   }
-  #col3 ul li:nth-child(4):before {
+  #col3 ul li.blog a:before {
     background-image: url(../image/blog-black.svg);
   }
-  #col3 ul li:nth-child(4):hover:before {
+  #col3 ul li.blog a:hover:before {
     background-image: url(../image/blog-white.svg);
   }
-  #col3 ul li:nth-child(5):before {
+  #col3 ul li.contact a:before {
     background-image: url(../image/contact-black.svg);
   }
-  #col3 ul li:nth-child(5):hover:before {
+  #col3 ul li.contact a:hover:before {
     background-image: url(../image/contact-white.svg);
   }
   #col1 ul {
